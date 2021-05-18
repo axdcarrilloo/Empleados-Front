@@ -1,0 +1,27 @@
+<div id="divBusqueda">
+    <input type="number" class="inputBuscar" placeholder="Id empleado" [(ngModel)]="campoBuscar">
+    <button mat-raised-button color="primary" (click)="buscarEmpleado()" class="btnBuscar"> Buscar </button>
+</div>
+
+<table datatable class="tableMain">
+    <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> Tipo de contrato </th>
+            <th> Rol </th>
+            <th> Salario por hora </th>
+            <th> Salario por mes </th>
+            <th> Salario anual calcualdo </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let empleado of empleadosSalarioAnual">
+            <td>{{ empleado.name }}</td>
+            <td>{{ empleado.contractTypeName }}</td>
+            <td>{{ empleado.roleName }}</td>
+            <td>{{ empleado.hourlySalary }}</td>
+            <td>{{ empleado.monthlySalary }}</td>
+            <td>{{ empleado.salarioCalculadoAnual }}</td>
+        </tr>
+    </tbody>
+</table>

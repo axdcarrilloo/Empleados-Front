@@ -1,0 +1,16 @@
+#divMain {
+    width: 80%;
+    border: groove;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#divSeleccion {
+    width: auto;
+}
+
+#divTablas {
+    margin-top: 10px;
+}

@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    margin-top: 4px;
+    border: groove;
+    border-color: #0400FF;
+}
+
+table th {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-right: groove;
+}
+
+table td {
+    color: black;
+    font-weight: bold;
+    border-bottom: groove;
+    border-bottom-color: #0400FF;
+    border-right: groove;
+}

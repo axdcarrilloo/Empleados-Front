@@ -1,0 +1,51 @@
+#divBusqueda {
+    width: 100%;
+    text-align: left;
+}
+
+.inputBuscar {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+}
+
+.inputBuscar:focus {
+    border-bottom-color: blue;
+}
+
+.btnBuscar {
+    height: 30px;
+    background-color: #87D0F4;
+}
+
+.btnBuscar:hover {
+    height: 30px;
+    background-color: blue;
+}
+
+table {
+    width: 100%;
+    margin-top: 4px;
+    border: groove;
+    border-color: #0400FF;
+}
+
+table th {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-right: groove;
+}
+
+table td {
+    color: black;
+    font-weight: bold;
+    border-bottom: groove;
+    border-bottom-color: #0400FF;
+    border-right: groove;
+}

@@ -1,0 +1,17 @@
+<div id="divMain">
+    <div id="divSeleccion">
+        <input type="radio" id="inpurCheck1" checked=true name="groupRadio" value="1" (change)="mostrarTabla($event)">
+        <label for="inpurCheck1"> Salario anual calculado </label>
+
+        <input type="radio" id="inpurCheck2" name="groupRadio" value="2" (change)="mostrarTabla($event)">
+        <label for="inpurCheck2"> Salario anual sin calculo </label>
+    </div>
+    <div id="divTablas">
+        <div *ngIf="tablaMostrar == 1">
+            <app-tabla-salario-calculado></app-tabla-salario-calculado>
+        </div>
+        <div *ngIf="tablaMostrar == 2">
+            <app-tabla-sin-calculo [empleadosSalarioAnual]="empleadosSaldosCalculados"></app-tabla-sin-calculo>
+        </div>
+    </div>
+</div>
